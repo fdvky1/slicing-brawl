@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./dist/tailwind.css">
 </head>
 <body class="bg-slate-200 w-full" style="font-family: 'DM Sans', sans-serif;">
-    <header class="bg-white">
+    <header class="bg-white" id="header">
         <nav class="container mx-auto py-4 px-8 flex justify-between items-center w-full" style="font-family: 'Roboto', sans-serif;">
             <a href="#">
                 <img src="./assets/logo-ligasmk-dark.png" alt="Liga SMK">
@@ -386,5 +386,16 @@
             </div>
         </div>
     </footer>
+    <script>
+        const header = document.getElementById("header");
+        const sticky = header.offsetTop;
+        window.onscroll = () => {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>

@@ -5,3 +5,9 @@
 .highlight {
     background: linear-gradient(180deg,rgba(255,255,255,0) 65%, #FFD0AE 65%);
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
