@@ -791,8 +791,8 @@ video {
   gap: 1.5rem;
 }
 
-.gap-9 {
-  gap: 2.25rem;
+.gap-\[4rem\] {
+  gap: 4rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1062,6 +1062,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:gap-\[6rem\] {
+    gap: 6rem;
+  }
+
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
